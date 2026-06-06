@@ -288,6 +288,43 @@ footer {
     border-top: 1px solid var(--rosa-pastel);
 }
 
+.contact-cards {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.mini-card {
+    background: var(--fundo-pastel);
+    border: 1px solid var(--rosa-pastel);
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: var(--transition);
+}
+
+.mini-card:hover {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transform: translateY(-2px);
+}
+
+.mini-card a {
+    text-decoration: none;
+    color: var(--texto-escuro);
+    font-weight: 600;
+}
+
+.mini-card a:hover {
+    color: var(--rosa-choque);
+}
+
+.devops-card {
+    margin-top: 20px;
+    display: inline-block;
+}
+
 /* --- Responsive --- */
 @media (max-width: 768px) {
     .hero {
